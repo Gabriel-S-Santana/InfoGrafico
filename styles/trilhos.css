@@ -1,0 +1,12 @@
+#trilhos {
+  background-color: #E98943;
+  background-image: url('../img/solution.svg');
+  background-position-x: -5px;
+}
+
+#remendo {
+  position: absolute;
+  top: -5%;
+  left: 40%;
+  width: 300px;
+}

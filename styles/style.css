@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+html {
+  width: 100vw; /* converted from 200vw */
+  max-height: 100vh;
+  background-color: #3f3f3f;
+  overflow: hidden;
+  display: flex;
+}
+
+#estrada {
+  background-image: url("img/estrada.svg");
+}
+
+.mapContainer {
+  overflow: hidden;
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100svh; /* converted from 100vh */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.header {
+  margin-left: 2.6rem; /* converted from 26px */
+  margin-top: 5.5rem; /* converted from 55px */
+  width: 47.3rem; /* converted from 473px */
+  transition: 0.2s ease-in-out;
+}
+
+.header h1 {
+  color: #fff;
+  font-family: Sora;
+  font-size: 4rem; /* converted from 40px */
+  font-style: normal;
+  font-weight: 700;
+  line-height: 7rem; /* converted from 70px */
+  margin-bottom: 1.5rem; /* converted from 15px */
+}
+
+.header p {
+  color: #fff;
+  font-family: Sora;
+  font-size: 2rem; /* converted from 20px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.2rem; /* converted from 32px */
+}
+
+.point {
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.figure {
+  position: relative;
+  width: 10rem; /* converted from 100px */
+}
+
+.vetor {
+  position: absolute;
+  z-index: 1;
+  width: 5.5rem; /* converted from 55px */
+}
+
+.infoBox {
+  position: absolute;
+  width: 22.7rem; /* converted from 227px */
+  display: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  flex-direction: column;
+}
+
+.close {
+  display: none;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  color: white; font-size: 20px;
+}
+
+.infoBox h1 {
+  color: #fff;
+  font-family: Sora;
+  font-size: 1.9rem; /* converted from 19px */
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.2rem;
+  margin-bottom: 0.2rem; /* converted from 2px */
+}
+
+.infoBox span {
+  color: var(--Mobilidade, #e98943);
+  font-family: Sora;
+  font-size: 4.9rem; /* converted from 49px */
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.2rem; /* converted from 32px */
+}
+
+.infoBox p {
+  color: #fff;
+  font-family: Sora;
+  font-size: 1.8rem; /* converted from 18px */
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2.8rem; /* converted from 28px */
+}
+
+#point1 {
+  top: 60%;
+  left: 10%;
+}
+
+.v1 {
+  top: 25%;
+  left: 20%;
+}
+
+.info1 {
+  top: -90%;
+  left: -60%;
+}
+
+#point2 {
+  top: 50%;
+  left: 33%;
+}
+
+.v2 {
+  width: 4.5rem;
+  top: 42%;
+  left: 25%;
+}
+
+.info2 p {
+  margin-bottom: 1.6rem;
+}
+
+#point3 {
+  top: 14%;
+  left: 49%;
+}
+
+.info3 p, .inf03 h1 {
+  margin-bottom: 1.6rem;
+}
+
+.info3 {
+  width: 11.9rem;
+  text-align: center;
+}
+
+.v3 {
+  width: 6.0rem;
+  top: 45%;
+  left: 25%;
+}
+
+#point4 {
+  top: 9%;
+  left: 61%;
+}
+
+.fig4 {
+  width: 15.0rem;
+}
+
+.info4 {
+  top: 0;
+  left: 100%;
+}
+
+.infoBox p {
+  margin-bottom: 1.6rem;
+}
+
+.v4 {
+  width: 4.0rem;
+  top: 30%;
+  left: 45%;
+}
+
+#point5 {
+  top: 52%;
+  left: 52%;
+}
+
+.info5 {
+  width: 10rem;
+  top: 0;
+  left: 150%;
+}
+
+.v5 {
+  width: 4.5rem;
+  top: 45%;
+  left: 28%;
+}
+
+#point6 {
+  top: 45%;
+  left: 85%;
+}
+
+.info6 {
+  width: 19.1rem;
+  top: 100%;
+  left: -40%;
+  text-align: center;
+}
+
+.info6 h1 {
+  line-height: 5.0rem;
+  font-size: 2.1rem;
+  text-align: center;
+}
+
+.v6 {
+  width: 2.2rem;
+  top: 38%;
+  left: 38%;
+}
+
+.mobileInfoBox {
+  position: fixed;
+  display: flex;
+  width: 70%;
+  height: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 4;
+  transition: 0.5s ease; /* Add transition for smooth effect */
+  border-radius: 1rem;
+}
+.mobileInfoBox h1 {
+  width: 50%;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+.mobileInfoBox p {
+  width: 50%;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.fechaModal {
+  width: 8rem;
+  height: 8rem;
+  margin-top: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e98943;
+  border: none;
+}
+
+.fechaModal img {
+  width: 4rem;
+}
+
+
+@media (max-width: 1025px) {
+
+  html {
+    font-size: 52%;
+    overflow: hidden;
+  }
+
+  #point1 {
+    top: 53%;
+  }
+  #point3 {
+    top: 23%;
+  }
+  #point5 {
+    top: 54%;
+    left: 50%;
+  }
+  .info5 {
+    left: 130%;
+  }
+}
+
+@media (max-width: 769px) {
+  html {
+    font-size: 40%;
+    overflow: hidden;
+  }
+
+  #point3 {
+    top: 30%;
+  }
+
+  .info3 {
+    left: -10%;
+  }
+
+  #point4 {
+    top: 28%;
+  }
+
+  .info5 {
+    top: -10%;
+    left: 125%;
+  }
+}
+
+@media (max-width: 426px) {
+  html {
+    font-size: 38%;
+  }
+  body {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .header p {
+    font-size: 2.2rem;
+  }
+
+  .mapContainer {
+    overflow: hidden;
+    position: static;
+  }
+
+  #estrada {
+    background-image: url('img/estrada-de-pé.png');
+  }
+
+  #point1 {
+    top: 27%;
+    left: 31%
+  }
+  #point2 {
+    top: 40%;
+    left: 30%
+  }
+
+  #point3 {
+    top: 69%;
+    left: 30%
+  }
+
+  #point4 {
+    top: 42%;
+    left: 55%
+  }
+
+  #point5 {
+    top: 55%;
+    left: 60%
+  }
+
+  .info5 {
+    top: 50%;
+    left: 50%;
+  }
+
+
+  #point6 {
+    top: 69%;
+    left: 60%;
+  }
+
+  .info3 {
+    left: 50%;
+  }
+
+  .header {
+    margin: 3rem 2.6rem 3rem ;
+  }
+
+}
