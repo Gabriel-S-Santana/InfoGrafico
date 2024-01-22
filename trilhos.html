@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br" onclick="zoomOut(event)">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,74 +8,85 @@
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/trilhos.css">
 </head>
+
 <body>
   <div class="header">
     <h1>
-      Segurança Viária
+      Mobilidade sustentável
     </h1>
-    <p>Clique nos ícones  e descubra como a CCR Rodovias cuida da sua segurança:adasdadadadasd</p>
+    <p>Clique nos ícones e veja como o Grupo CCR transita para uma economia de baixo carbono:</p>
   </div>
   <main id="trilhos" class="mapContainer" onclick="zoomOut(event)">
-      <!-- <div id="point7" class="point" onclick="toggleZoom(event, this)">
-        <img class="vetor v7" src="img/gasolina.svg" alt="">
-        <img class="figure" src="img/baixo.svg" alt="">
-        <div class="infoBox info7">
-          <h1><span>1,3</span> milhão</h1>
-          <p>de atendimentos/ano aos clientes das rodovias</p>
-          <button class="fechaModal"><img src="img/check.svg" alt=""></button>
-        </div>
+
+    <div id="point7" class="point" onclick="toggleZoom(event, this)">
+      <img class="figure" src="img/trem.svg" alt="">
+      <div class="infoBox info7">
+        <h1><span>3 milhões</span></h1>
+        <p>de passageiros transportados todos os dias</p>
+        <button class="fechaModal"><img src="img/check.svg" alt=""></button>
       </div>
-      <div id="point8" class="point" onclick="toggleZoom(event, this)">
-        <img class="vetor v8" src="img/ferramenta.svg" alt="">
-        <img class="figure" src="img/cima.svg" alt="">
-        <div class="infoBox info8">
-          <p>É como se, diariamente, fossem feitos</p>
-          <h1><span>3,7</span> mil</h1>
-          <p>atendimentos</p>
-          <button class="fechaModal"><img src="img/check.svg" alt=""></button>
-        </div>
+    </div>
+    <div id="point8" class="point" onclick="toggleZoom(event, this)">
+      <img class="figure" src="img/grupo2.svg" alt="">
+      <div class="infoBox info8">
+        <p>Quanto mais pessoas optarem pelo transporte público, menor serão as emissões de gases do efeito estufa</p>
+        <h1><img id="carro-escuro" src="img/carro-escuro.svg" alt=""> polui <span>30x</span> mais que o <img
+            id="trem-escuro" src="img/trem-escuro.svg" alt=""></h1>
+        <button class="fechaModal"><img src="img/check.svg" alt=""></button>
       </div>
-      <div id="point9" class="point" onclick="toggleZoom(event, this)">
-        <img class="vetor v9" src="img/acidente.svg" alt="">
-        <img class="figure" src="img/cima.svg" alt="">
-        <div class="infoBox info9">
-          <p>Redução de</p>
-          <h1><span>90%</span></h1>
-          <p>no índice de mortalidade</p>
-          <button class="fechaModal"><img src="img/check.svg" alt=""></button>
-        </div>
+    </div>
+    <div id="point9" class="point" onclick="toggleZoom(event, this)">
+      <img class="figure" src="img/co2.svg" alt="">
+      <div class="infoBox info9">
+        <p>O metrô é um modal elétrico e, em Salvador e Lauro de Freitas (BA), </p>
+        <h1>poupou emissões equivalentes a <span>23.564</span> carros e evitou a emissão de 45 mil toneladas de CO2 em 8
+          anos
+        </h1>
+        <button class="fechaModal"><img src="img/check.svg" alt=""></button>
       </div>
-      <div id="point10" class="point" onclick="toggleZoom(event, this)">
-        <img class="vetor v10" src="img/motorista.svg" alt="">
-        <img class="figure fig10" src="img/esquerda-baixo.svg" alt="">
-        <div class="infoBox info10">
-          <div class="close">fechar</div>
-          <p>Cerca de</p>
-          <h1><span>375</span>mil</h1>
-          <p>acidentes evitados</p>
-          <button class="fechaModal"><img src="img/check.svg" alt=""></button>
-        </div>
+    </div>
+    <div id="point10" class="point" onclick="toggleZoom(event, this)">
+      <img class="figure" src="img/luz.svg" alt="">
+      <div class="infoBox info10">
+        <p>Nas estradas, a energia solar abastece a iluminação de rodovias, operação de praças de pedágio e o
+          funcionamento das câmeras de monitoramento</p>
+        <h1><span>5,8 mil</span> já evitaram a emissão de 900 toneladas de CO2
+        </h1>
+        <button class="fechaModal"><img src="img/check.svg" alt=""></button>
       </div>
-      <div id="point11" class="point" onclick="toggleZoom(event, this)">
-        <img class="vetor v11" src="img/grupo.svg" alt="">
-        <img class="figure fig11" src="img/cima-direita.svg" alt="">
-        <div class="infoBox info11">
-          <p>Cerca de</p>
-          <h1><span>375</span>mil</h1>
-          <p>acidentes evitados</p>
-          <button class="fechaModal"><img src="img/check.svg" alt=""></button>
-        </div>
+    </div>
+    <div id="point11" class="point" onclick="toggleZoom(event, this)">
+      <img class="figure" src="img/lampada.svg" alt="">
+      <div class="infoBox info11">
+        <p>Até
+        <h1><span>2025</span></h1>
+        </p>
+        <p>a energia usada nas rodovias, aeroportos, trens, metrôs, VLTs e barcas do Grupo CCR, virá de <b>fontes
+            renováveis</b></p>
+        <button class="fechaModal"><img src="img/check.svg" alt=""></button>
       </div>
-      <div id="point12" class="point" onclick="toggleZoom(event, this)">
-        <img class="vetor v12" src="img/inforamacao.svg" alt="">
-        <img class="figure fig12" src="img/cima.svg" alt="">
-        <div class="infoBox info12">
-          <h1><span>Veja os números</span></h1>
-          <p>sobre mobilidade sustentável</p>
-          <button class="fechaModal"><img src="img/check.svg" alt=""></button>
-        </div>
-      </div> -->
-    </main>
+    </div>
+    <div id="point12" class="point" onclick="toggleZoom(event, this)">
+      <img class="figure" src="img/painel-solar.svg" alt="">
+      <div class="infoBox info12">
+        <p>Até
+        <h1><span>2026</span></h1>
+        </p>
+        <p>o aumento das usinas solares nas rodovias e na Linha 5 (Lilás), do metrô de São Paulo, vai<b> evitar 1 mil
+            toneladas de emissões de CO2</b></p>
+        <button class="fechaModal"><img src="img/check.svg" alt=""></button>
+      </div>
+    </div>
+    <div id="point13" class="point" onclick="toggleZoom(event, this)">
+      <img class="figure" src="img/info-2.svg" alt="">
+      <div class="infoBox info13">
+        <h1><span>Veja os números</span></h1>
+        <p>sobre mobilidade sustentável</p>
+        <button class="fechaModal"><img src="img/check.svg" alt=""></button>
+      </div>
+    </div>
+  </main>
   <script src="script/main.js"></script>
 </body>
+
 </html>

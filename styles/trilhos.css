@@ -1,12 +1,352 @@
-#trilhos {
-  background-color: #E98943;
-  background-image: url('../img/solution.svg');
-  background-position-x: -5px;
+html {
+  font-size: 61%;
 }
 
-#remendo {
-  position: absolute;
-  top: -5%;
-  left: 40%;
-  width: 300px;
+body,
+html {
+  background-color: #E98943;
+}
+
+#trilhos {
+  background-image: url('../img/solution.svg');
+  background-position-x: 0px;
+}
+
+.figure{
+  width: 11rem;
+}
+
+.infoBox span{
+  color: #B52A0C;
+}
+
+.header {
+  width: 40rem;
+}
+
+#point7 {
+  top: 70%;
+  left: 5%;
+}
+
+.info7 {
+  top: -90%;
+  width: 28.4rem;
+}
+
+#point8 {
+  top: 50%;
+  left: 37%;
+}
+
+#point8 .figure {
+  width: 12rem;
+}
+
+#point8 .infoBox {
+  width: 38.3rem;
+}
+
+#carro-escuro {
+  width: 5rem;
+}
+
+.info8 {
+  top: -70%;
+  left: -355%;
+}
+
+#point9 {
+  top: 10%;
+  left: 50%;
+}
+
+#point9 .figure {
+  width: 15rem;
+}
+
+.info9 {
+  width: 31.9rem;
+  top: -50%;
+  left: 100%;
+}
+
+.info9 p {
+  margin-bottom: 0.3rem;
+  font-size: 1.8rem;
+}
+
+.info9 h1 span {
+  line-height: 5rem;
+}
+
+#point10 {
+  top: 49%;
+  left: 52%;
+}
+
+#point10 img {
+  width: 10rem;
+}
+
+.info10 {
+  width: 36.5rem;
+}
+
+#point11 {
+  top: 15%;
+  left: 75%;
+}
+
+#point11 img {
+  width: 15rem;
+}
+
+.info11 {
+  width: 26.6rem;
+  top: -50%;
+  left: -150%;
+}
+
+.info11 p {
+  margin-bottom: 0;
+}
+
+#point12 {
+  top: 68%;
+  left: 76%;
+}
+
+.info12 {
+  width: 28rem;
+  top: -80%;
+  left: -235%;
+}
+
+.info12 p {
+  margin-bottom: 0;
+}
+
+#point13 {
+  top: 85%;
+  left: 78%;
+}
+
+.info13 {
+  left: -200%;
+  top: -60%;
+}
+
+
+
+@media (max-width: 1300px) {
+  html {
+    font-size: 50%;
+  }
+
+  .mapContainer{
+    height: 120vh;
+  }
+
+  #point7 {
+    top: 64%;
+  }
+
+  #point8 {
+    left: 40%;
+  }
+  #point9 {
+    left: 47%;
+  }
+  #point10 {
+    top: 49%;
+    left: 55%;
+  }
+  #point11 {
+    top: 27%;
+  }
+
+  #point12 {
+    top: 60%;
+    left: 83%;
+  }
+  #point13 {
+    top: 70%;
+    left: 85%;
+  }
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 55%;
+  }
+
+  .mapContainer{
+    height: 90vh;
+  }
+
+  #point7 {
+    top: 54%;
+  }
+
+  #point8 {
+    top: 48%;
+    left: 35%;
+  }
+  .info8 {
+    top: 200%;
+    left: -50%;
+  }
+
+  #point9 {
+    top: 30%;
+    left: 50%;
+  }
+
+  .info9 {
+    top: -150%;
+    left: 0;
+  }
+
+  .info10 {
+    left: -100%;
+    top: 110%;
+  }
+
+  #point11 {
+    top: 33%;
+  }
+
+  .info11 {
+    left: 0%;
+    top: -110%;
+  }
+
+  #point12 {
+    top: 55%;
+    left: 80%;
+  }
+
+  .info12 {
+    top: 70%;
+  }
+
+  #point13 {
+    top: 62%;
+    left: 83%;
+  }
+
+  .info13 {
+    top: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 38%;
+  }
+
+  #trilhos {
+    background-image: url('../img/solution-2.png');
+    background-position: center;
+  }
+
+  #point7 {
+    top: 54%;
+  }
+
+  #point8 {
+    top: 48%;
+    left: 35%;
+  }
+  .info8 {
+    top: 200%;
+    left: -50%;
+  }
+
+  #point9 {
+    top: 30%;
+    left: 50%;
+  }
+
+  .info9 {
+    top: -150%;
+    left: 0;
+  }
+
+  .info10 {
+    left: -100%;
+    top: 110%;
+  }
+
+  #point11 {
+    top: 33%;
+  }
+
+  .info11 {
+    left: 0%;
+    top: -110%;
+  }
+
+  #point12 {
+    top: 55%;
+    left: 80%;
+  }
+
+  .info12 {
+    top: 70%;
+  }
+
+  #point13 {
+    top: 62%;
+    left: 83%;
+  }
+
+  .info13 {
+    top: 50%;
+  }
+
+  .mobileInfoBox {
+    position: fixed;
+    display: flex;
+    width: 70%;
+    height: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 4;
+    transition: 0.5s ease; /* Add transition for smooth effect */
+    border-radius: 1rem;
+  }
+  .mobileInfoBox h1 {
+    width: 50%;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+  .mobileInfoBox p {
+    width: 50%;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  .fechaModal {
+    width: 8rem;
+    height: 8rem;
+    margin-top: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e98943;
+    border: none;
+  }
+  
+  .fechaModal img {
+    width: 4rem;
+  }
 }

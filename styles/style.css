@@ -20,12 +20,11 @@ html {
 }
 
 #estrada {
-  background-image: url("img/estrada.svg");
+  background-image: url("../img/estrada.svg");
 }
 
 .mapContainer {
   overflow: hidden;
-  
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -339,7 +338,7 @@ html {
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 436px) {
   html {
     font-size: 38%;
   }
@@ -358,7 +357,7 @@ html {
   }
 
   #estrada {
-    background-image: url('img/estrada-de-pé.png');
+    background-image: url('../img/estrada-de-pé.png');
   }
 
   #point1 {
@@ -382,7 +381,7 @@ html {
 
   #point5 {
     top: 55%;
-    left: 60%
+    left: 55%
   }
 
   .info5 {

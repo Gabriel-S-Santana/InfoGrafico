@@ -27,7 +27,7 @@ function toggleZoom(event, element) {
     isPointOpen = true;
 
     event.stopPropagation(); // Impede a propagação do evento para o elemento pai (mapContainer)
-    var mapContainer = document.getElementById("mapContainer");
+    var mapContainer = document.querySelector(".mapContainer");
     var infoBox = element.querySelector(".infoBox");
 
     mapContainer.style.transform = "scale(1.5)";
@@ -56,10 +56,10 @@ function toggleZoom(event, element) {
       header.style.opacity = 0;
       mapContainer.style.transition = ""; // Remove a transição para permitir um deslocamento suave
       isAnimating = false; // A animação está concluída
-    }, 100); // Delay da aparência da infoBox por 500ms
+    }, 200); // Delay da aparência da infoBox por 500ms
     setTimeout(function () {
       infoBox.style.opacity = 1;
-    }, 500); // Delay da aparência da infoBox por 500ms
+    }, 300); // Delay da aparência da infoBox por 500ms
   }
   else if (tamanhoTela <=430) {
 
@@ -72,12 +72,12 @@ function toggleZoom(event, element) {
     infoBox = element.querySelector('.infoBox');
 
     setTimeout(
-      engrandece(infoBox), 500);
+      engrandece(infoBox), 100);
     setTimeout(function () {
       isAnimating = false
       infoBox.style.opacity = 1
       header.style.opacity = 0;
-    }, 500)
+    }, 300)
 
 
     function engrandece(elemento) {
@@ -94,7 +94,7 @@ function toggleZoom(event, element) {
     isPointOpen = false;
 
     event.stopPropagation(); // Impede a propagação do evento para o elemento pai (mapContainer)
-    var mapContainer = document.getElementById("mapContainer");
+    var mapContainer = document.querySelector(".mapContainer");
     var infoBoxes = document.querySelectorAll(".infoBox");
 
     // Anima o zoom-out
@@ -104,12 +104,16 @@ function toggleZoom(event, element) {
     // Oculta infoBoxes com delay
     infoBoxes.forEach(function (box, index) {
       setTimeout(function () {
-        box.style.display = "none";
         box.style.opacity = 0;
+      }, 100)
+
+      setTimeout(function () {
         header.style.opacity = 1;
         mapContainer.style.transition = ""; // Remove a transição para permitir um deslocamento suave
+        box.style.display = "none";
         isAnimating = false; // A animação está concluída
-      }, index * 100);
+      }, 500);
+      
     });
   }
 
