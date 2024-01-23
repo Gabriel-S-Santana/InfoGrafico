@@ -1,0 +1,296 @@
+#aereo {
+  background-image: url("../img/aeroporto-2.png");
+  background-position-y: calc(100% - 6.6rem);
+}
+
+body,
+html {
+  background-color: #f1f0e6;
+}
+
+.header {
+  width: 80%;
+}
+.header h1,
+.header p {
+  color: #3f3f3f;
+}
+
+.infoBox p,
+.infoBox h1 {
+  color: #3f3f3f;
+  text-align: right;
+}
+
+span {
+  color: #e98943;
+}
+
+#point14 {
+  top: 45%;
+  left: 6%;
+}
+
+.info14 p,
+.info14 h1 {
+  text-align: left;
+}
+
+.info14 {
+  top: -100%;
+}
+
+#point15 {
+  top: 37%;
+  left: 30%;
+}
+
+#grupo-3 {
+  width: 9rem;
+}
+
+.info15 {
+  text-align: right;
+  top: 100%;
+  left: -200%;
+}
+
+#point16 {
+  top: 35%;
+  left: 50%;
+}
+
+#cone {
+  width: 7rem;
+}
+
+.info16 {
+  width: 26rem;
+  top: 120%;
+  left: -250%;
+}
+
+#point17 {
+  top: 32%;
+  left: 67%;
+}
+
+#caixa {
+  width: 8rem;
+}
+
+.info17 {
+  top: 100%;
+  left: -200%;
+}
+
+#point18 {
+  top: 32%;
+  left: 95%;
+}
+
+#pin {
+  width: 7rem;
+}
+
+.info18 {
+  top: 40%;
+  left: -350%;
+}
+
+#point19 {
+  top: 55%;
+  left: 80%;
+}
+
+#final {
+  width: 7rem;
+}
+
+.info19 {
+  width: 50rem;
+  top: 50%;
+  left: -750%;
+}
+
+.info19 h1 {
+  line-height: 5rem;
+}
+
+@media (max-width: 1300px) {
+  html {
+    font-size: 58%;
+  }
+
+  #aereo {
+    background-position-y: calc(100% - 6.6rem - 9rem);
+  }
+
+  #point15 {
+    top: 40%;
+  }
+
+  #point17 {
+    top: 35%;
+  }
+  #point18 {
+    top: 35%;
+  }
+  .info19 {
+    top: 0%;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 54%;
+  }
+  #aereo {
+    background-position-y: calc(100% - 60rem);
+  }
+
+  #point14 {
+    top: 35%;
+  }
+  #point15 {
+    top: 35%;
+  }
+  .info15 {
+    top: -200%;
+  }
+  #point16 {
+    top: 33%;
+  }
+  .info16 {
+    top: -100%;
+  }
+
+  #point18 {
+    left: 90%;
+  }
+
+  .info18 {
+    top: -100%;
+    left: -200%;
+  }
+
+  #point19 {
+    top: 42%;
+  }
+
+  .info19 {
+    left: -500%;
+    top: 200%;
+  }
+}
+
+@media (max-width: 430px) {
+
+  .mobileInfoBox {
+    text-align: center;
+    position: fixed;
+    display: flex;
+    width: 70%;
+    height: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 4;
+    transition: 0.5s ease; /* Add transition for smooth effect */
+    border-radius: 1rem;
+  }
+  .mobileInfoBox h1 {
+    text-align: center;
+    color: #f1f0e6;
+    width: 80%;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+  .mobileInfoBox p {
+    color: #f1f0e6;
+    width: 80%;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  .fechaModal {
+    width: 8rem;
+    height: 8rem;
+    margin-top: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e98943;
+    border: none;
+  }
+  
+  .fechaModal img {
+    width: 4rem;
+  }
+
+  html {
+    font-size: 50%;
+  }
+
+  #aereo {
+    background-image: url("../img/aeroporto-pé.png");
+    background-position: center;
+  }
+
+  #point14 {
+    top: 33%;
+    left: 50%;
+  }
+  #point15 {
+    top: 43%;
+    left: 38%;
+  }
+  #point16 {
+    top: 54%;
+    left: 45%;
+  }
+
+  #point17 {
+    top: 60%;
+    left: 20%;
+  }
+
+  #point18 {
+    top: 88%;
+    left: 48%;
+  }
+
+  #point19 {
+    top: 70%;
+    left: 60%;
+  }
+}
+
+@media (max-width: 430px) {
+  html {
+    font-size: 48%;
+  }
+
+  #point14 {
+    top: 35%;
+  }
+
+  #point16 {
+    top: 55%;
+  }
+
+  #point18 {
+    top: 85%;
+  }
+
+  #point19 {
+    left: 58%;
+  }
+}

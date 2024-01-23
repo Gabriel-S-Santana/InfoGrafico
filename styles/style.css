@@ -54,7 +54,7 @@ html {
   font-size: 4rem; /* converted from 40px */
   font-style: normal;
   font-weight: 700;
-  line-height: 7rem; /* converted from 70px */
+  line-height: 5rem; /* converted from 70px */
   margin-bottom: 1.5rem; /* converted from 15px */
 }
 
@@ -130,6 +130,8 @@ html {
   font-weight: 300;
   line-height: 2.8rem; /* converted from 28px */
 }
+
+/* posicionamento */
 
 #point1 {
   top: 60%;

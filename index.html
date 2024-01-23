@@ -1,80 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-br" onclick="zoomOut(event)">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CCR infográfico</title>
-  <link rel="stylesheet" href="styles/style.css">
+  <title>CCR INFOGRÁFICO</title>
+  <link rel="stylesheet" href="styles/home.css">
 </head>
+
 <body>
-  <div class="header">
-    <h1>
-      Segurança Viária
-    </h1>
-    <p>Clique nos ícones  e descubra como a CCR Rodovias cuida da sua segurança:</p>
-  </div>
-  <main id="estrada" class="mapContainer" onclick="zoomOut(event)">
-      
-      <div id="point1" class="point" onclick="toggleZoom(event, this)">
-        <img class="vetor v1" src="img/gasolina.svg" alt="">
-        <img class="figure" src="img/baixo.svg" alt="">
-        <div class="infoBox info1">
-          <h1><span>1,3</span> milhão</h1>
-          <p>de atendimentos/ano aos clientes das rodovias</p>
-          <button class="fechaModal"><img src="img/check.svg" alt=""></button>
-        </div>
-      </div>
-      <div id="point2" class="point" onclick="toggleZoom(event, this)">
-        <img class="vetor v2" src="img/ferramenta.svg" alt="">
-        <img class="figure" src="img/cima.svg" alt="">
-        <div class="infoBox info2">
-          <p>É como se, diariamente, fossem feitos</p>
-          <h1><span>3,7</span> mil</h1>
-          <p>atendimentos</p>
-          <button class="fechaModal"><img src="img/check.svg" alt=""></button>
-        </div>
-      </div>
-      <div id="point3" class="point" onclick="toggleZoom(event, this)">
-        <img class="vetor v3" src="img/acidente.svg" alt="">
-        <img class="figure" src="img/cima.svg" alt="">
-        <div class="infoBox info3">
-          <p>Redução de</p>
-          <h1><span>90%</span></h1>
-          <p>no índice de mortalidade</p>
-          <button class="fechaModal"><img src="img/check.svg" alt=""></button>
-        </div>
-      </div>
-      <div id="point4" class="point" onclick="toggleZoom(event, this)">
-        <img class="vetor v4" src="img/motorista.svg" alt="">
-        <img class="figure fig4" src="img/esquerda-baixo.svg" alt="">
-        <div class="infoBox info4">
-          <div class="close">fechar</div>
-          <p>Cerca de</p>
-          <h1><span>375</span>mil</h1>
-          <p>acidentes evitados</p>
-          <button class="fechaModal"><img src="img/check.svg" alt=""></button>
-        </div>
-      </div>
-      <div id="point5" class="point" onclick="toggleZoom(event, this)">
-        <img class="vetor v5" src="img/grupo.svg" alt="">
-        <img class="figure fig4" src="img/cima-direita.svg" alt="">
-        <div class="infoBox info5">
-          <p>Cerca de</p>
-          <h1><span>375</span>mil</h1>
-          <p>acidentes evitados</p>
-          <button class="fechaModal"><img src="img/check.svg" alt=""></button>
-        </div>
-      </div>
-      <div id="point6" class="point" onclick="toggleZoom(event, this)">
-        <img class="vetor v6" src="img/inforamacao.svg" alt="">
-        <img class="figure fig6" src="img/cima.svg" alt="">
-        <div class="infoBox info6">
-          <h1><span>Veja os números</span></h1>
-          <p>sobre mobilidade sustentável</p>
-          <button class="fechaModal"><img src="img/check.svg" alt=""></button>
-        </div>
-      </div>
-    </main>
-  <script src="script/main.js"></script>
+  <header>
+    <h1><b>Escolha</b> o caminho a percorrer</h1>
+  </header>
+
+  <main>
+    <div class="link-container">
+      <a href="estrada.html" class="link-imagem"><img src="img/seg-viaria.png" alt=""></a>
+      <a href="estrada.html" class="link-texto">Segurança viária</a>
+    </div>
+    <div class="link-container">
+      <a href="trilhos.html" class="link-imagem"><img src="img/mobi-sustentavel.png" alt=""></a>
+      <a href="trilhos.html" class="link-texto">Mobilidade sustentável</a>
+    </div>
+    <div class="link-container">
+      <a href="aereo.html" class="link-imagem"><img src="img/dev-aereo.png" alt=""></a>
+      <a href="aereo.html" class="link-texto">Desenvolvimento Aéreo</a>
+    </div>
+  </main>
 </body>
+
 </html>

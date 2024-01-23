@@ -6,6 +6,7 @@ const tamanhoTela =
 var isAnimating = false; // Flag para verificar se a animação está em andamento
 var isPointOpen = false; // Flag para verificar se um ponto está aberto
 let header = document.querySelector(".header");
+console.log(header.style.lineHeight);
 let fechaModal = document.querySelectorAll(".fechaModal");
 
 if (tamanhoTela > 430) {
@@ -76,7 +77,6 @@ function toggleZoom(event, element) {
     setTimeout(function () {
       isAnimating = false
       infoBox.style.opacity = 1
-      header.style.opacity = 0;
     }, 300)
 
 
@@ -125,10 +125,8 @@ function toggleZoom(event, element) {
     var infoBoxes = document.querySelectorAll(".infoBox");
     infoBoxes.forEach( function (elemento) {
       setTimeout (function () {
-        
         elemento.style.opacity = 0;
-        header.style.opacity = 1
-      }, 500)
+      }, 200)
       isAnimating = false;
       diminui(elemento);
       
@@ -137,7 +135,7 @@ function toggleZoom(event, element) {
     function diminui(elemento) {
       setTimeout ( function () {
         elemento.classList.remove('mobileInfoBox');
-      }, 600)
+      }, 300)
       
     }
   }

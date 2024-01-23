@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br" onclick="zoomOut(event)">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/aereo.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1>
+      Desenvolvimento aéreo
+    </h1>
+    <p>Clique nos ícones e saiba porque a CCR é uma das maiores operadoras de aeroportos do país:</p>
+  </div>
+  <main id="aereo" class="mapContainer" onclick="zoomOut(event)">
+
+    <div id="point14" class="point" onclick="toggleZoom(event, this)">
+      <img class="figure" src="img/brasil.svg" alt="">
+      <div class="infoBox info14">
+        <h1><span>17</span>unidades</h1>
+        <p>em <b>9 estados</b> do Brasil e 3 no exterior (Equador, Costa Rica e Curaçao)</p>
+        <button class="fechaModal"><img src="img/check.svg" alt=""></button>
+      </div>
+    </div>
+    <div id="point15" class="point" onclick="toggleZoom(event, this)">
+      <img id="grupo-3" class="figure" src="img/grupo-3.svg" alt="">
+      <div class="infoBox info15">
+        <p>Capacidade de atendimento de</p>
+        <h1><span>46</span>milhões</h1>
+        <p>de clientes por ano</p>
+        <button class="fechaModal"><img src="img/check.svg" alt=""></button>
+      </div>
+    </div>
+    <div id="point16" class="point" onclick="toggleZoom(event, this)">
+      <img id="cone" class="figure" src="img/cone.svg" alt="">
+      <div class="infoBox info16">
+        <h1><span>+2,3</span> mil</h1>
+        <p>empregos serão gerados nas 15 obras de melhorias em aeroportos em 2024</p>
+        <button class="fechaModal"><img src="img/check.svg" alt=""></button>
+      </div>
+    </div>
+    <div id="point17" class="point" onclick="toggleZoom(event, this)">
+      <img id="caixa" class="figure" src="img/caixa.svg" alt="">
+      <div class="infoBox info17">
+        <h1><span>452</span> toneladas</h1>
+        <p>de carga transportada</p>
+        <button class="fechaModal"><img src="img/check.svg" alt=""></button>
+      </div>
+    </div>
+    <div id="point18" class="point" onclick="toggleZoom(event, this)">
+      <img id="pin" class="figure" src="img/pin.svg" alt="">
+      <div class="infoBox info18">
+        <h1><span>+200</span> destinos</h1>
+        <p>ofertados</p>
+        <button class="fechaModal"><img src="img/check.svg" alt=""></button>
+      </div>
+    </div>
+    <div id="point19" class="point" onclick="toggleZoom(event, this)">
+      <img id="final" class="figure" src="img/info-final.svg" alt="">
+      <div class="infoBox info19">
+        <h1><span>Veja os números</span></h1>
+        <p>mobilidade sustentável e segurança viária</p>
+        <button class="fechaModal"><img src="img/check.svg" alt=""></button>
+      </div>
+    </div>
+    
+  </main>
+  <script src="script/main.js"></script>
+</body>
+
+</html>

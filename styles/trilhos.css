@@ -1,3 +1,5 @@
+/* Ajustes */
+
 html {
   font-size: 61%;
 }
@@ -23,6 +25,8 @@ html {
 .header {
   width: 40rem;
 }
+
+/* Posicionamento */
 
 #point7 {
   top: 70%;
@@ -85,7 +89,7 @@ html {
   left: 52%;
 }
 
-#point10 img {
+#luz {
   width: 10rem;
 }
 
@@ -98,7 +102,7 @@ html {
   left: 75%;
 }
 
-#point11 img {
+#lampada {
   width: 15rem;
 }
 
@@ -135,6 +139,10 @@ html {
 .info13 {
   left: -200%;
   top: -60%;
+}
+
+.info13 h1 {
+  line-height: 4rem;
 }
 
 
@@ -251,65 +259,51 @@ html {
   }
 
   #point7 {
-    top: 54%;
+    top: 34%;
+    left: 29%;
   }
 
   #point8 {
     top: 48%;
-    left: 35%;
-  }
-  .info8 {
-    top: 200%;
-    left: -50%;
+    left: 18%;
   }
 
   #point9 {
-    top: 30%;
-    left: 50%;
+    top: 46%;
+    left: 36%;
   }
 
-  .info9 {
-    top: -150%;
-    left: 0;
-  }
-
-  .info10 {
-    left: -100%;
-    top: 110%;
+  #point10 {
+    top: 63%;
+    left: 35%;
   }
 
   #point11 {
-    top: 33%;
+    top: 39%;
+    left: 69%;
   }
 
-  .info11 {
-    left: 0%;
-    top: -110%;
+  #bug-fix {
+    width: 5rem;
   }
 
   #point12 {
-    top: 55%;
-    left: 80%;
-  }
-
-  .info12 {
-    top: 70%;
+    top: 75%;
+    left: 35%;
   }
 
   #point13 {
-    top: 62%;
-    left: 83%;
+    top: 83%;
+    left: 40%;
   }
 
-  .info13 {
-    top: 50%;
-  }
 
   .mobileInfoBox {
     position: fixed;
     display: flex;
     width: 70%;
     height: 50%;
+    padding: 3%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -323,17 +317,16 @@ html {
     border-radius: 1rem;
   }
   .mobileInfoBox h1 {
-    width: 50%;
+    width: 80%;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2.7rem;
     margin-bottom: 1rem;
   }
   .mobileInfoBox p {
-    width: 50%;
+    width: 80%;
     text-align: center;
     font-size: 2.5rem;
   }
-  
   .fechaModal {
     width: 8rem;
     height: 8rem;
@@ -348,5 +341,18 @@ html {
   
   .fechaModal img {
     width: 4rem;
+  }
+}
+
+@media (max-width: 360px) {
+  #point7 {
+    left: 25%;
+  }
+  #point8 {
+    left: 15%;
+  }
+  #point9 {
+    left: 32%;
+    top: 50%;
   }
 }
