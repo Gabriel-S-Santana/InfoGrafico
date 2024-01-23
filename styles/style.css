@@ -19,6 +19,32 @@ html {
   display: flex;
 }
 
+a {
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+.voltar {
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  position: absolute;
+  top: 5%;
+  right: 2%;
+}
+
+.voltar p {
+  color: #FFF;
+
+font-family: Sora;
+font-size: 2.14rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
 #estrada {
   background-image: url("../img/estrada.svg");
 }
@@ -348,6 +374,18 @@ html {
     flex-direction: column;
     height: auto;
   }
+
+  .voltar {
+    flex-direction: column;
+  }
+
+  .voltar img {
+    width: 6rem;
+  }
+
+  .voltar p {
+    font-size: 1.8rem;
+  }
   
   .header p {
     font-size: 2.2rem;
@@ -391,7 +429,6 @@ html {
     left: 50%;
   }
 
-
   #point6 {
     top: 69%;
     left: 60%;
@@ -405,4 +442,18 @@ html {
     margin: 3rem 2.6rem 3rem ;
   }
 
+}
+
+@media (max-width: 390px) {
+  html {
+    font-size: 30%;
+  }
+
+  #point2 {
+    top: 38%
+  }
+
+  #point5 {
+    left: 63%;
+  }
 }

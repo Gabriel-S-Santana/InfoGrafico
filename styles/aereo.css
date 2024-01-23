@@ -8,6 +8,10 @@ html {
   background-color: #f1f0e6;
 }
 
+.voltar p {
+  color: #3f3f3f;
+}
+
 .header {
   width: 80%;
 }
@@ -292,5 +296,27 @@ span {
 
   #point19 {
     left: 58%;
+  }
+}
+
+@media (max-width: 390px) {
+  html {
+    font-size: 30%;
+  }
+
+  #point14 {
+    top: 28%;
+    left: 55%;
+  }
+
+  #point15 {
+    left: 66%;
+    top: 60%;
+  }
+  #point16 {
+    top: 45%;
+  }
+  #point17 {
+    left: 25%;
   }
 }

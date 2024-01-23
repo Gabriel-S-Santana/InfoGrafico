@@ -62,7 +62,7 @@ html {
 
 #point9 {
   top: 10%;
-  left: 50%;
+  left: 47%;
 }
 
 #point9 .figure {
@@ -85,7 +85,7 @@ html {
 }
 
 #point10 {
-  top: 49%;
+  top: 46%;
   left: 52%;
 }
 
@@ -98,7 +98,7 @@ html {
 }
 
 #point11 {
-  top: 15%;
+  top: 18%;
   left: 75%;
 }
 
@@ -118,7 +118,7 @@ html {
 
 #point12 {
   top: 68%;
-  left: 76%;
+  left: 78%;
 }
 
 .info12 {
@@ -133,7 +133,7 @@ html {
 
 #point13 {
   top: 85%;
-  left: 78%;
+  left: 80%;
 }
 
 .info13 {
@@ -145,7 +145,49 @@ html {
   line-height: 4rem;
 }
 
+@media (max-width: 1500px) {
+  html {
+    font-size: 55%;
+  }
 
+  #point8 {
+    top: 50%;
+    left: 38%;
+  }
+
+  #point12 {
+    top: 60%;
+    left: 75%;
+  }
+  #point13 {
+    top: 73%;
+    left: 77%;
+  }
+}
+@media (max-width: 1400px) {
+  #point8 {
+    top: 50%;
+    left: 38%;
+  }
+
+  #point9 {
+    left: 49%;
+  }
+
+  .info11 {
+    top: -80%;
+  }
+
+  #point12 {
+    top: 60%;
+    left: 79%;
+  }
+  #point13 {
+    top: 73%;
+    left: 80%;
+  }
+
+}
 
 @media (max-width: 1300px) {
   html {
